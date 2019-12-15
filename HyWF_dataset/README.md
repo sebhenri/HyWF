@@ -2,7 +2,8 @@
 
 This folder contains the dataset gathered for the paper Protecting against Website Fingerprinting with Multihoming, published at PoPETS 2020.
 
-It consists in real traces gathered with different single path and multipath algorithms.
+It consists in real Tor traces gathered with different single path and multipath algorithms. The files consist in timestamp and direction (incoming or outgoing) of the Tor cells.
+More details about the architecture can be found in the paper.
 
 The traces are split in several files to fit GitHub's limit of 100MB:
 
