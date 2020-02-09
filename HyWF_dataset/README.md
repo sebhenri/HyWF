@@ -17,5 +17,9 @@ MPTCP default: mptcp-def_wifiwifi_p1_1_cells.tar.gz and mptcp-def_wifiwifi_p1_2_
 
 MPTCP round-robin: mptcp-rr_wifiwifi_p1_cells.tar.gz (path 1) and mptcp-rr_wifiwifi_p2_cells.tar.gz (path 2)
 
+To extract the cell files, run
+$ tar -xvf FILE_NAME.tar.gz
+
+The files consist in a pair timestamp - direction of all Tor cells.
 
 The other datasets used in the paper (Wang, Hayes and DF) can be found with the paper in which they were decribed.
