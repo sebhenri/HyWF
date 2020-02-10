@@ -7,24 +7,23 @@ The different options can be found in the files or with the -h option (e.g., `py
 The two main files are attacks.py and defenses.py.
 
 1. attacks.py enables us to run several attacks: k-fingerprinting, k-NN, and CUMUL.
-+
-We reused the code provided by the authors of the following attacks:
-+
-a. k-fingerprinting (Hayes et al.), attack used with argument `-t H`
-b. k-NN (Wang et al.), attack used with argument `-t W`
-This code also implements CUMUL (Panchenko et al.), used with argument `-t P`
---
+  We reused the code provided by the authors of the following attacks:
+
+  1. k-fingerprinting (Hayes et al.), attack used with argument `-t H`
+  2. k-NN (Wang et al.), attack used with argument `-t W`
+
+  This code also implements CUMUL (Panchenko et al.), used with argument `-t P`
 
 Our paper also uses the attack Deep-Fingerprinting (Sirinam et al.) for which we reused directly the authors' code and which is not contained in this code.
 
 2. defenses.py enables us to run several defenses. We reused the code provided by the authors of the following defense:
-a. WTFPAD (Juarez et al.), used with argument `-t W`.
---
+1. WTFPAD (Juarez et al.), used with argument `-t W`.
 
 Examples:
 `python attacks.py -tr ../HyWF_dataset/mptcp-hywf_wifiwifi_cells/p1_cells -t H`
 enables us to run the k-fingerprinting attack on path 1 of the MPTCP-HyWF dataset (exp dataset in the paper, obtained
 with MPTCP and HyWF scheduler; the TPR should be around 37%).
+
 `python attacks.py -tr ../HyWF_dataset/tcp-wifi_cells -t H`
 enables us to run the k-fingerprinting attack on single-path TCP (exp dataset in the paper, obtained with single-path TCP;
 the result should be around 90%).
@@ -41,3 +40,4 @@ By default, when the splitting probability -pr is smaller than 1, the parameters
 The attack requires some information about the datasets (e.g., number of sites, etc.). These information are automatically computed (see `check_data_format` in `utils.py`) and saved in a format.pickle file to make the next attack faster.
 
 Results of an attack are saved in the out/ folder. The next run of attack.py with the next parameters simply loads the results. `--force` can be used to force the attack to be run again from scratch.
+
