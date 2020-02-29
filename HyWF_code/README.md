@@ -10,8 +10,8 @@ The two main files are attacks.py and defenses.py.
 
    We reused the code provided by the authors of the following attacks:
 
-  * k-fingerprinting (Hayes et al.), attack used with argument `-t H`
-  * k-NN (Wang et al.), attack used with argument `-t W`
+   * k-fingerprinting (Hayes et al.), attack used with argument `-t H`
+   * k-NN (Wang et al.), attack used with argument `-t W`
 
    This code also implements CUMUL (Panchenko et al.), used with argument `-t P`
 
