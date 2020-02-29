@@ -5,20 +5,21 @@ This folder contains the dataset gathered for the paper Protecting against Websi
 It consists in real Tor traces gathered with different single path and multipath algorithms. The files consist in timestamp and direction (incoming or outgoing) of the Tor cells.
 More details about the architecture can be found in the paper.
 
-The traces are split in several files to fit GitHub's limit of 100MB:
+The traces are split in several files to fit GitHub's limit of 100MB. The dataset can also be found as a single file on Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3692743.svg)](https://doi.org/10.5281/zenodo.3692743)
 
-single-path TCP: tcp-wifi_cells.tar.gz (paths 1 and 2)
+single-path TCP: `tcp-wifi_cells.tar.gz` (paths 1 and 2)
 
-HyWF #1: mptcp-hywf_wifiwifi_cells.tar.gz (paths 1 and 2)
+HyWF #1: `mtpcp-hywf_wifiwifi_cells.tar.gz` (paths 1 and 2)
 
-HyWF #2: mptcp-hywf_wifiwifi_2_p1_cells.tar.gz (path 1) and mptcp-hywf_wifiwifi_2_p2_cells.tar.gz (path 2)
+HyWF #2: `mtpcp-hywf_wifiwifi_2_p1_cells.tar.gz` (path 1) and `mtpcp-hywf_wifiwifi_2_p2_cells.tar.gz` (path 2)
 
-MPTCP default: mptcp-def_wifiwifi_p1_1_cells.tar.gz and mptcp-def_wifiwifi_p1_2_cells.tar.gz (path 1) and mptcp-def_wifiwifi_p2_cells.tar.gz (path 2)
+MPTCP default: `mtpcp-def_wifiwifi_p1_1_cells.tar.gz` and `mtpcp-def_wifiwifi_p1_2_cells.tar.gz` (path 1) and `mtpcp-def_wifiwifi_p2_cells.tar.gz` (path 2)
 
-MPTCP round-robin: mptcp-rr_wifiwifi_p1_cells.tar.gz (path 1) and mptcp-rr_wifiwifi_p2_cells.tar.gz (path 2)
+MPTCP round-robin: `mtpcp-rr_wifiwifi_p1_cells.tar.gz` (path 1) and `mtpcp-rr_wifiwifi_p2_cells.tar.gz` (path 2)
 
 To extract the cell files, run
-$ tar -xvf FILE_NAME.tar.gz
+```tar -xvf FILE_NAME.tar.gz```
 
 The files consist in a pair timestamp - direction of all Tor cells.
 
