@@ -164,7 +164,7 @@ def attacks(args):
                 return
 
         if not os.path.exists(args.cellf_loc):
-            os.mkdir(args.cellf_loc)
+            os.makedirs(args.cellf_loc)
 
     open_world = args.num_open_insts > 0
 
@@ -875,7 +875,7 @@ def get_args(argv=None, light=False):  # if light, only returns minimal args wit
         sys.exit(0)
 
     if not light and not os.path.exists(args.output_directory):
-        os.mkdir(args.output_directory)
+        os.makedirs(args.output_directory)
 
     args.train_directories, args.test_directory, max_closed_sitenum, max_closed_instnum, max_open_sitenum, \
     args.first_closed_sitenum, _, _, args.delimiter, args.suffix\
