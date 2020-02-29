@@ -7,17 +7,18 @@ The different options can be found in the files or with the -h option (e.g., `py
 The two main files are attacks.py and defenses.py.
 
 1. attacks.py enables us to run several attacks: k-fingerprinting, k-NN, and CUMUL.
-  We reused the code provided by the authors of the following attacks:
+
+   We reused the code provided by the authors of the following attacks:
 
   1. k-fingerprinting (Hayes et al.), attack used with argument `-t H`
   2. k-NN (Wang et al.), attack used with argument `-t W`
 
-  This code also implements CUMUL (Panchenko et al.), used with argument `-t P`
+   This code also implements CUMUL (Panchenko et al.), used with argument `-t P`
 
 Our paper also uses the attack Deep-Fingerprinting (Sirinam et al.) for which we reused directly the authors' code and which is not contained in this code.
 
 2. defenses.py enables us to run several defenses. We reused the code provided by the authors of the following defense:
-1. WTFPAD (Juarez et al.), used with argument `-t W`.
+  * WTFPAD (Juarez et al.), used with argument `-t W`.
 
 Examples:
 `python attacks.py -tr ../HyWF_dataset/mptcp-hywf_wifiwifi_cells/p1_cells -t H`
