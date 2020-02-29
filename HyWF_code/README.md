@@ -18,7 +18,7 @@ The two main files are attacks.py and defenses.py.
 Our paper also uses the attack Deep-Fingerprinting (Sirinam et al.) for which we reused directly the authors' code and which is not contained in this code.
 
 2. defenses.py enables us to run several defenses. We reused the code provided by the authors of the following defense:
-  * WTFPAD (Juarez et al.), used with argument `-t W`.
+   * WTFPAD (Juarez et al.), used with argument `-t W`.
 
 Examples:
 `python attacks.py -tr ../HyWF_dataset/mptcp-hywf_wifiwifi_cells/p1_cells -t H`
